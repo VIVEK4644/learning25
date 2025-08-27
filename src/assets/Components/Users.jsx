@@ -26,7 +26,8 @@ export const Users = (props) => {
     <div>
 
         {/* <h1 style={{textAlign:"center", backgroundColor:"red"}}>Jaye SHree RSM</h1> */}
-        <UserList Apptitle ={title}   AppNewTitle = {users} ></UserList> 
+        <UserList Apptitle={title}   AppNewTitle={users} ></UserList>
+
         
     </div>
  )

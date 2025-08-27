@@ -14,7 +14,9 @@ export const UserList = (props) => {
             <th>Age</th>
           </tr>
         </thead>
-            { 
+
+          <tbody> 
+            {   
                 props.AppNewTitle.map((user)=>
                 {
                 return <tr>
@@ -22,10 +24,11 @@ export const UserList = (props) => {
                     <td>{user.name}</td>
                     <td>{user.age}</td>
                   </tr>
-              }
-              )
-            }
-      </table>
+              })
+            }     
+          </tbody>
+            
+      </table> 
     </div>
   )
 }
