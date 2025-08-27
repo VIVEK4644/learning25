@@ -14,7 +14,7 @@ export const UserList = (props) => {
             <th>Age</th>
           </tr>
         </thead>
-            {
+            { 
                 props.AppNewTitle.map((user)=>
                 {
                 return <tr>
