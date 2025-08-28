@@ -29,6 +29,9 @@ export const UserList = (props) => {
           </tbody>
             
       </table> 
+      {/* <button onClick={props.newbtn(100)}>Test 2</button> */}
+      {/* <button onClick={props.newbtn(100)}>Test 2</button> */}
+      <button onClick={()=>{(props.newbtn(100))}}>Test 2</button>
     </div>
   )
 }

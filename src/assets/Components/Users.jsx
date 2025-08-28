@@ -21,12 +21,22 @@ export const Users = (props) => {
       age:25
     }
   ]
+
+  const btntst = (x)=>{
+    alert("Hello React Js...."+x)
+  }
     
   return (
     <div>
 
         {/* <h1 style={{textAlign:"center", backgroundColor:"red"}}>Jaye SHree RSM</h1> */}
-        <UserList Apptitle={title}   AppNewTitle={users} ></UserList>
+        {/* <button onClick={btntst}>Test</button> */}
+        {/* <button onClick={btntst(100)}>Test 2</button> mistake */}
+        {/* <button onClick={()=>{btntst(100)}}>Test 2</button> */}
+        <UserList Apptitle={title}   AppNewTitle={users} newbtn={btntst} ></UserList>
+
+
+
 
         
     </div>
