@@ -32,6 +32,7 @@ export const UserList = (props) => {
       {/* <button onClick={props.newbtn(100)}>Test 2</button> */}
       {/* <button onClick={props.newbtn(100)}>Test 2</button> */}
       <button onClick={()=>{(props.newbtn(100))}}>Test 2</button>
+      <button onClick={()=>{props.newbtn(5000)}}>Test3</button>
     </div>
   )
 }

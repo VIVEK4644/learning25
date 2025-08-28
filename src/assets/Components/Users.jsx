@@ -31,7 +31,7 @@ export const Users = (props) => {
 
         {/* <h1 style={{textAlign:"center", backgroundColor:"red"}}>Jaye SHree RSM</h1> */}
         {/* <button onClick={btntst}>Test</button> */}
-        {/* <button onClick={btntst(100)}>Test 2</button> mistake */}
+        {/* <button onClick={btntst(100)}>Test 2</button>  */}
         {/* <button onClick={()=>{btntst(100)}}>Test 2</button> */}
         <UserList Apptitle={title}   AppNewTitle={users} newbtn={btntst} ></UserList>
 
