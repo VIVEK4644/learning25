@@ -10,6 +10,8 @@ import MapDemo2 from './assets/Components/MapDemo2'
 import MapDemo3 from './assets/Components/MapDemo3'
 import MapDemo4 from './assets/Components/MapDemo4'
 import { Users } from './assets/Components/Users'
+import UseStateDemo from './assets/Components/UseStateDemo'
+
 
 
 
@@ -21,7 +23,8 @@ function App(props) {
    
       <div>
         <HeaderComponent title = {title}></HeaderComponent> 
-        <Users></Users>
+        {/* <Users></Users> */}
+        <UseStateDemo></UseStateDemo>
             
       </div>
         
