@@ -13,6 +13,7 @@ import { Users } from './assets/Components/Users'
 import UseStateDemo from './assets/Components/UseStateDemo'
 import UseStateDemo2 from './assets/Components/UseStateDemo2'
 import UseStateDemo3 from './assets/Components/UseStateDemo3'
+import Students from './assets/Components/Students'
 
 
 
@@ -25,10 +26,7 @@ function App(props) {
    
       <div>
         <HeaderComponent title = {title}></HeaderComponent> 
-        {/* <Users></Users> */}
-        {/* <UseStateDemo></UseStateDemo> */}
-        {/* <UseStateDemo2></UseStateDemo2> */}
-        <UseStateDemo3></UseStateDemo3>
+       <Students></Students>
             
       </div>
         
