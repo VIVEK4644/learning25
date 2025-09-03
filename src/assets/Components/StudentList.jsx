@@ -7,10 +7,10 @@ function StudentList(props) {
 
         <h1>StudentList</h1>
 
-        
         {
             props.student.length==0 && <h1>No student found..</h1>
         }
+        
 
         <table className='table'>
             <thead>

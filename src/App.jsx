@@ -14,6 +14,7 @@ import UseStateDemo from './assets/Components/UseStateDemo'
 import UseStateDemo2 from './assets/Components/UseStateDemo2'
 import UseStateDemo3 from './assets/Components/UseStateDemo3'
 import Students from './assets/Components/Students'
+import Employee from './assets/Components/Employee'
 
 
 
@@ -26,7 +27,8 @@ function App(props) {
    
       <div>
         <HeaderComponent title = {title}></HeaderComponent> 
-       <Students></Students>
+       {/* <Students></Students> */}
+       <Employee></Employee>
             
       </div>
         
