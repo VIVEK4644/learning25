@@ -15,6 +15,16 @@ import UseStateDemo2 from './assets/Components/UseStateDemo2'
 import UseStateDemo3 from './assets/Components/UseStateDemo3'
 import Students from './assets/Components/Students'
 import Employee from './assets/Components/Employee'
+import DoctorComp from './assets/Components/DoctorComp'
+import Netflixhome from './assets/Components/Netflix/Netflixhome'
+import Navbar from './assets/Components/Navbar'
+import { Route, Routes } from 'react-router'
+import NetflixMovies from './assets/Components/Netflix/NetflixMovies'
+import Error404 from './assets/Components/Error404'
+import NetflicContent from './assets/Components/Netflix/NetflicContent'
+import NetflixShow from './assets/Components/Netflix/NetflixShow'
+import InputHandlingDemo1 from './assets/Components/Input/InputHandlingDemo1'
+
 
 
 
@@ -22,14 +32,23 @@ import Employee from './assets/Components/Employee'
 
 function App(props) {
 
-    var title = "React.js"
+   var title = "React.js"
   return (
    
-      <div>
-        <HeaderComponent title = {title}></HeaderComponent> 
-       {/* <Students></Students> */}
-       <Employee></Employee>
-            
+      <div style={{textAlign:'center'}}>
+        
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Students/>}></Route>
+          <Route path="/netflixhome" element={<Netflixhome/>} ></Route>
+          <Route path="/netflixmovies" element={<NetflixMovies/>} ></Route>
+          {/* <Route path="/*" element={<h2>not found</h2>} ></Route> */}
+          <Route path="/*" element={<Error404/>} ></Route>
+          <Route path='/watch/:name' element={<NetflicContent/>}></Route>
+          <Route path='/netflixshow' element={<NetflixShow/>}></Route>
+          <Route path='/inputdemo1' element={<InputHandlingDemo1/>}></Route>
+        </Routes>
+   
       </div>
         
     
