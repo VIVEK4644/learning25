@@ -30,7 +30,7 @@ function Navbar() {
       </li>    
       <li class="nav-item active">
         {/* <a class="nav-link" href="/netflixhome">Home  */}
-        <Link class="nav-link" to="/inputdemo1">input
+        <Link class="nav-link" to="/formdemo1">formdemo1
         </Link>
       </li>   
     </ul>

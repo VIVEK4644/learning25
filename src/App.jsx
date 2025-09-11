@@ -24,6 +24,9 @@ import Error404 from './assets/Components/Error404'
 import NetflicContent from './assets/Components/Netflix/NetflicContent'
 import NetflixShow from './assets/Components/Netflix/NetflixShow'
 import InputHandlingDemo1 from './assets/Components/Input/InputHandlingDemo1'
+import InputHandlingDemo2 from './assets/Components/Input/InputHandlingDemo2'
+import { FormDemo1 } from './assets/Components/Form/FormDemo1'
+import FormDemo2 from './assets/Components/Form/FormDemo2'
 
 
 
@@ -46,7 +49,9 @@ function App(props) {
           <Route path="/*" element={<Error404/>} ></Route>
           <Route path='/watch/:name' element={<NetflicContent/>}></Route>
           <Route path='/netflixshow' element={<NetflixShow/>}></Route>
-          <Route path='/inputdemo1' element={<InputHandlingDemo1/>}></Route>
+          {/* <Route path='/inputdemo1' element={<InputHandlingDemo1/>}></Route> */}
+          {/* <Route path='/inputdemo2' element={<InputHandlingDemo2/>}></Route> */}
+          <Route path='/formdemo1' element={<FormDemo2/>}></Route>
         </Routes>
    
       </div>
