@@ -41,6 +41,9 @@ function Navbar() {
       <li>
         <Link className='nav-link' to="/formdemoh1">formdemoh1</Link>  
       </li> 
+      <li>
+        <Link className='nav-link' to="/formdemoh2">formdemeh2</Link>
+      </li>
     </ul>
   </div>
 </nav>

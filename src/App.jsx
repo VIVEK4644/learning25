@@ -55,7 +55,8 @@ function App(props) {
           {/* <Route path='/inputdemo2' element={<InputHandlingDemo2/>}></Route> */}
           <Route path='/formdemo1' element={<FormDemo1/>}></Route>
           <Route path='/formdemo2' element={<FormDemo2/>}></Route>
-          <Route path='/formdemoh1' element={<FormDemoH2/>}></Route>
+          <Route path='/formdemoh1' element={<FormDemoH1/>}></Route>
+          <Route path='/formdemoh2' element={<FormDemoH2/>}></Route>
 
         </Routes>
    
