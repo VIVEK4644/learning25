@@ -1,43 +1,82 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 
 function FormDemo2() {
-  const [output, setoutput] = useState("")
- 
+    const {register , handleSubmit , formState:{errors} }= useForm()
 
-  const { register, handleSubmit } = useForm()
+    const submitHandler = (data)=>{
+        console.log(data);
+        
+    }
 
-  const submitHandler = (data) => {
-    console.log(data.first);
-    console.log(data.last);
-    console.log(data.age);
-    console.log(data.color);
-    setoutput(data)
-
-  }
+    const validationSchema ={
+             
+        nameValidator :{
+            required :{
+                value :true , 
+                message:"name is required"
+            },
+            minLength :{
+                value : 5,
+                message:"name must be 5 above"
+            },
+            maxLength : {
+                value : 20,
+                message : "name must 20 "
+            }
+        },
+        emailValidator : {
+            required : {
+                value : true,
+                message : "email is required"
+            },
+            minLength :{
+                value : 7,
+                message:"email input shoud be 7 charecter more"
+            },
+            maxLength : {
+                value:20,
+                message:"email input shoud less than 20"
+            }
+        },
+        ageValidator : {
+            required : {
+                value : true ,
+                message : "age is required"
+            },
+            min :{
+                value : 18 ,
+                message : "age must be 18 or greater"
+            },
+            max  :{
+                value:60,
+                message:"age must be less than 60"
+            }
+        }
+    }
 
   return (
     <div>
-      <h1>FormDemo2</h1>
-      <form onSubmit={handleSubmit(submitHandler)}>
-        <label >First Name :</label> <input type="text" {...register("first")} /> <br />
+        <h1>FormDemo2</h1>
+        <form onSubmit={handleSubmit(submitHandler)}>
+            <div>
+                <label htmlFor="">Name :- </label>
+                <input type="text" {...register("name", validationSchema.nameValidator)} />
+                {errors.name?.message}
+            </div>
+            <div>
+                <label htmlFor="">Email :- </label>
+                <input type="text" {...register("email",validationSchema.emailValidator)}  />
+                {errors.email?.message}
+            </div>
+            <div>
+                <label htmlFor="">Age :- </label>
+                <input type="number" {...register("age" , validationSchema.ageValidator)}/>
+                {errors.age?.message}
 
-        <label >Last Name :</label> <input type="text" {...register("last")} /> <br />
-        <label >Age :</label> <input type="number" {...register("age")} /> <br />
-        <input type="color" {...register("color")} />
-        <br /><br />
-
-        <input type="submit" />
-
-      </form>
-
-      <div style={{color:output.color}}>
-        <h1>First Name :-  {output.first}</h1>
-        <h1>Last Name :-  {output.last}</h1>
-        <h1>Age :-  {output.age}</h1>
-
-      </div>
-
+            </div>
+            <input type="submit"  />
+        </form>
     </div>
   )
 }

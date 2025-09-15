@@ -33,6 +33,14 @@ function Navbar() {
         <Link class="nav-link" to="/formdemo1">formdemo1
         </Link>
       </li>   
+      <li class="nav-item active">
+        {/* <a class="nav-link" href="/netflixhome">Home  */}
+        <Link class="nav-link" to="/formdemo2">formdemo2
+        </Link>
+      </li>  
+      <li>
+        <Link className='nav-link' to="/formdemoh1">formdemoh1</Link>  
+      </li> 
     </ul>
   </div>
 </nav>
