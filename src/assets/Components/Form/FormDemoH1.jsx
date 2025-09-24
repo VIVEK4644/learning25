@@ -126,8 +126,6 @@ function FormDemoH1() {
                     </div><br />
                     <input type="submit" />
                 </form>
-           
-
         </div>
     )
 }

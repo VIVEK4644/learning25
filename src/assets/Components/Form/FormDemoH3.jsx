@@ -1,8 +1,7 @@
 import React from 'react'
-import { useForm } from 'react-hook-form'
-// import "../../css/Form/FormDemoH2.css" 
+import { useForm } from 'react-hook-form';
 
-function FormDemoH2() {
+export const FormDemoH3 = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
   console.log("Errors :- ", errors);
 
@@ -43,19 +42,19 @@ function FormDemoH2() {
         value: true,
         message: "Contact number is required"
       },
-      min:{
-        value:1111111111,
-        message:"contact number input 10 digit"
+      min: {
+        value: 1111111111,
+        message: "contact number input 10 digit"
       },
-      max:{
-        value:9999999999,
-        message:"contact number input 10 digit"
-      } 
+      max: {
+        value: 9999999999,
+        message: "contact number input 10 digit"
+      }
     },
-    usernameValidation:{
-      required:{
-        value:true,
-        message:"username is required"
+    usernameValidation: {
+      required: {
+        value: true,
+        message: "username is required"
       },
       minLength: {
         value: 8,
@@ -66,32 +65,25 @@ function FormDemoH2() {
         message: "username must be input less than 12"
       }
     },
-    passwordValidation:{
-      required:{
-        value:true,
-        message:"password is required"
+    passwordValidation: {
+      required: {
+        value: true,
+        message: "password is required"
       },
-      minLength:{
-        value:8,
-        message:"password must be input 8 character"
+      minLength: {
+        value: 8,
+        message: "password must be input 8 character"
       },
-      maxLength:{
-        value:"12",
-        message:"password input less than 12 character"
-      }
-    },
-    countryValidation:{
-      required:{
-        value:true,
-        message:"select country"
+      maxLength: {
+        value: "12",
+        message: "password input less than 12 character"
       }
     }
-
   }
 
   return (
     <div>
-      <h1>FormDemoH2</h1>
+      <h1>FormDemoH3</h1>
       <div>
         <form onSubmit={handleSubmit(submitHandler)}>
           <div>
@@ -106,13 +98,13 @@ function FormDemoH2() {
           </div><br />
           <div>
             <label htmlFor="">Contact :- </label>
-            <input type="number" {...register("contact" , validationSchema.contactValidation)} />
+            <input type="number" {...register("contact", validationSchema.contactValidation)} />
             {errors.contact?.message}
 
           </div><br />
           <div>
             <label htmlFor="">UserName :- </label>
-            <input type="text" {...register("username" , validationSchema.usernameValidation)} />
+            <input type="text" {...register("username", validationSchema.usernameValidation)} />
             {errors.username?.message}
 
           </div><br />
@@ -123,7 +115,7 @@ function FormDemoH2() {
           </div><br />
           <div>
             <label htmlFor="">Country :- </label>  &nbsp;
-            <select  {...register("country" , validationSchema.countryValidation)}>
+            <select  {...register("country")}>
               <option value="">none</option>
               <option value="india">india</option>
               <option value="usa">usa</option>
@@ -139,5 +131,3 @@ function FormDemoH2() {
     </div>
   )
 }
-
-export default FormDemoH2

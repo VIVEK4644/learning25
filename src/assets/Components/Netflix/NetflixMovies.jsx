@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
+import { MyButton } from '../common/MyButton'
 
 function NetflixMovies() {
+
+  const movies =()=>{
+    alert("Movies....")
+  }
   return (
     <div style={{textAlign:'center'}}>
       <h1>Netflix Movie</h1>
@@ -35,7 +40,8 @@ function NetflixMovies() {
             <Link to="/watch/kgf" className='btn btn-warning'>Watching</Link>
           </div>
         </div>
-       </div>
+       </div><br /><br />
+       <MyButton funcName={movies} name="Movies"></MyButton>
     </div>
   )
 }

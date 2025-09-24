@@ -29,6 +29,11 @@ import { FormDemo1 } from './assets/Components/Form/FormDemo1'
 import FormDemo2 from './assets/Components/Form/FormDemo2'
 import FormDemoH1 from './assets/Components/Form/FormDemoH1'
 import FormDemoH2 from './assets/Components/Form/FormDemoH2'
+import { FormDemoH3 } from './assets/Components/Form/FormDemoH3'
+import { FormDemo3 } from './assets/Components/Form/FormDemo3'
+import FormDemoH4 from './assets/Components/Form/FormDemoH4'
+import { FormDemo4 } from './assets/Components/Form/FormDemo4'
+import { DynamicForm } from './assets/Components/Form/DynamicForm'
 
 
 
@@ -53,11 +58,15 @@ function App(props) {
           <Route path='/netflixshow' element={<NetflixShow/>}></Route>
           {/* <Route path='/inputdemo1' element={<InputHandlingDemo1/>}></Route> */}
           {/* <Route path='/inputdemo2' element={<InputHandlingDemo2/>}></Route> */}
+          {/* <Route path='/formdemoh1' element={<FormDemoH1/>}></Route> */}
+          {/* <Route path='/formdemoh2' element={<FormDemoH2/>}></Route> */}
+          {/* <Route path='/formdemoh3' element={<FormDemoH3/>}></Route> */}
+          <Route path='/formdemoh4' element={<FormDemoH4/>}></Route>
           <Route path='/formdemo1' element={<FormDemo1/>}></Route>
           <Route path='/formdemo2' element={<FormDemo2/>}></Route>
-          <Route path='/formdemoh1' element={<FormDemoH1/>}></Route>
-          <Route path='/formdemoh2' element={<FormDemoH2/>}></Route>
-
+          <Route path='/formdemo3' element={<FormDemo3/>}></Route>
+          <Route path='/formdemo4' element={<FormDemo4/>}></Route>
+          <Route path='/dynamicform' element={<DynamicForm/>}></Route>
         </Routes>
    
       </div>

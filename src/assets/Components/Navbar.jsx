@@ -38,12 +38,28 @@ function Navbar() {
         <Link class="nav-link" to="/formdemo2">formdemo2
         </Link>
       </li>  
-      <li>
+      {/* <li>
         <Link className='nav-link' to="/formdemoh1">formdemoh1</Link>  
       </li> 
       <li>
         <Link className='nav-link' to="/formdemoh2">formdemeh2</Link>
       </li>
+      <li>
+        <Link className='nav-link' to="/formdemoh3">fromdemoh3</Link> 
+      </li> */}
+      <li>
+        <Link className='nav-link' to="/formdemoh4">FormDemoh4</Link>
+      </li>
+      <li>
+        <Link className='nav-link' to="/formdemo3">formdemo3</Link>
+      </li>
+      <li>
+        <Link className='nav-link' to="formdemo4">formdemo4</Link>
+      </li>
+      <li>
+        <Link className='nav-link' to="dynamicform">DynamicForm</Link>
+      </li>
+      
     </ul>
   </div>
 </nav>

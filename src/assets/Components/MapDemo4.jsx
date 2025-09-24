@@ -1,4 +1,5 @@
 import React from 'react'
+import { MyButton } from './common/MyButton'
 
 function MapDemo4() {
   var books = [
@@ -132,6 +133,7 @@ function MapDemo4() {
             }
             </tbody>
         </table>
+
 
           
     </div>
