@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useFieldArray, useForm } from 'react-hook-form'
 
 export const DynamicForm = () => {
@@ -7,6 +7,8 @@ export const DynamicForm = () => {
   const [output, setoutput] = useState("")
 const submitHandler=(data)=>{
   console.log(data.passengers);
+    setoutput(data.passengers)
+  
 }
   return (
     <div>
@@ -37,7 +39,32 @@ const submitHandler=(data)=>{
             <div>
                 <input type="submit" />
             </div>
-        </form>
+        </form><br />
+        <div>
+            {
+                output && <table className='table table-bordered'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {
+                        output.map((filed)=>{
+                            return <tr>
+                                <td>{filed.name}</td>
+                                <td>{filed.age}</td>
+                                <td>{filed.gender}</td>
+                            </tr>
+                        })
+
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
     </div>
   )
 }
