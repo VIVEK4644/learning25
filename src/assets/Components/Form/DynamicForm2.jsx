@@ -46,7 +46,7 @@ export const DynamicForm2 = () => {
       <div>
         <h1>Out Put</h1>
         {
-          output && <table border="2px" align='center'>
+          output && <table className='table table-light'>
             <thead>
               <tr>
                 <th>Name</th>
