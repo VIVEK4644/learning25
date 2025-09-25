@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useFieldArray, useForm } from 'react-hook-form'
+import '../../css/Form/formdyn.css'
+
 
 export const DynamicForm2 = () => {
   const { register, handleSubmit, control } = useForm({ defaultValues: { person: [{ name: "", age: "", doss: "" }] } })
