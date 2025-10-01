@@ -35,6 +35,8 @@ import FormDemoH4 from './assets/Components/Form/FormDemoH4'
 import { FormDemo4 } from './assets/Components/Form/FormDemo4'
 import { DynamicForm } from './assets/Components/Form/DynamicForm'
 import { DynamicForm2 } from './assets/Components/Form/DynamicForm2'
+import { Expenss } from './assets/Components/Eexpenss/Expenss'
+import { FindBomd } from './assets/Components/FindBomd'
 
 
 
@@ -68,6 +70,8 @@ function App(props) {
           <Route path='/formdemo3' element={<FormDemo3/>}></Route>
           <Route path='/formdemo4' element={<FormDemo4/>}></Route>
           <Route path='/dynamicform' element={<DynamicForm2/>}></Route>
+          <Route path='/Expenss' element={<Expenss/>}></Route>
+          <Route path='/Findbomb' element={<FindBomd/>}></Route>
         </Routes>
    
       </div>

@@ -59,6 +59,12 @@ function Navbar() {
       <li>
         <Link className='nav-link' to="dynamicform">DynamicForm</Link>
       </li>
+      <li>
+        <Link className='nav-link' to="Expenss">Expenss</Link>
+      </li>
+      <li>
+        <Link className='nav-link' to="Findbomb">Findbomb</Link>
+      </li>
       
     </ul>
   </div>
